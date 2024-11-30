@@ -62,13 +62,13 @@ print("Jumlah panen padi:", padi_panen)
 print("Jumlah panen kedelai:", kedelai_panen)
 
 
-#for lokasi, data in data_panen.items():
-#    padi = data['hasil_panen']['padi']
-#    jagung = data['hasil_panen']['jagung']
-#    if padi > 1300 or jagung > 800:
-#        print(f"{data['nama_lokasi']} memerlukan perhatian khusus.")
-#    else:
-#        print(f"{data['nama_lokasi']} dalam kondisi baik.")
+for lokasi, data in data_panen.items():
+    padi = data['hasil_panen']['padi']
+    jagung = data['hasil_panen']['jagung']
+    if padi > 1300 or jagung > 800:
+        print(f"{data['nama_lokasi']} memerlukan perhatian khusus.")
+    else:
+        print(f"{data['nama_lokasi']} dalam kondisi baik.")
 
 
 
